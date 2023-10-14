@@ -1,0 +1,279 @@
+body{
+    min-width: 1024px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    background: #F3F5FC;
+}
+
+.container {
+    background: #F3F5FC;
+}
+
+.logo{
+    width: 120px;
+    height: 48px;
+    position: relative;
+    top: 20px;
+    display: inline;
+}
+
+.ahorcado{
+    justify-content: center;
+    display: flex;
+}
+
+.botones-home{
+    position: absolute;
+    width: 317px;
+    height: 114px;
+    left: 500px;
+    top: 1px;
+}
+.btn-iniciar{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 44px;
+    position: absolute;
+    width: 317px;
+    height: 114px;
+    left: 0;
+    top: 20rem;
+    background: #0A3871;
+    border-radius: 24px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 22px;
+    display: flex;
+    justify-content: center;    
+    color: #FFFFFF;
+    border: none;
+}
+.btn-agregar-palabra {
+    position: absolute;
+    width: 280px;
+    height: 67px;
+    top: 480px;
+    left: 18.5px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    gap: 8px;
+    padding: 24px;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+}
+
+#botones-iniciar-juego{
+    display: none;
+}
+
+#boton-nuevojuego{
+    font-size: larger;
+    text-decoration-line: none;
+    border-radius: 20px;
+    bottom: 230px;
+    width: 250px;
+    height: auto;
+    margin: auto;
+    border: none;
+    padding: 19px 0;
+    background: #0A3871;
+    color:white; 
+}
+#boton-desistir{
+    font-size: larger;
+    text-decoration-line: none;
+    border-radius: 20px;
+    bottom: 230px;
+    width: 250px;
+    height: auto;
+    margin: auto;
+    padding: 19px 0;
+    border: none;
+    background: #0A3871;
+    color:white; 
+}
+
+#horca{
+    display: none;
+    margin-top: 20px;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    position: absolute;
+    width: 688px;
+    height: 67px;
+    top: 601px;
+    left: 360px;
+}
+
+.panel{
+    margin: auto;
+    width: 100%;
+    display: none;
+}
+
+.ingresar-palabra{
+    display: none; 
+    position: absolute;
+    width: 299px;
+    height: 48px;
+    top: 150px;
+    left: 370px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    background: #F3F5FC;
+    color: #000;
+    border: none;
+    outline: none;
+}
+
+::placeholder{
+    color: #0A3871;
+}
+
+.caja{
+    width: auto;
+    height: auto;
+    display: none;
+    flex-direction: column;
+    text-align: center;
+}
+
+.minus{
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    width: 115px;
+    height: 18px;
+    left: 250px;
+    top: 545px;
+    padding: 0px;
+    gap: 8px;
+}
+
+#textoinformativo{
+    float: left;
+    margin-left: 130px;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+}
+
+#guardar{
+    background: #0A3871;
+    border: none;
+    display: none;
+    color: #FFFFFF;
+    font-size: larger;
+    text-decoration-line: none;
+    border-radius: 20px;
+    height: 67px;
+    margin-left: 230px;
+    margin-top: 500px;
+    width: 300px;
+    padding: 20px;
+}
+
+#cancelar{
+    background: #FFFFFF;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    display: none;
+    font-size: larger;
+    text-decoration-line: none;
+    border-radius: 24px;
+    height: 67px;
+    margin-left: 240px;
+    margin-top: 500px;
+    width: 300px;
+    padding: 20px;
+}
+
+
+/* Dispositivos móviles*/
+@media screen and (min-width:0px) and (max-width:480px) {
+    .logo {
+        margin-left: 100px;
+        margin-top: 10px;
+    }
+    .botones-home {
+        margin-left: -160px;
+    }
+    #botones-iniciar-juego {
+        width: 100%;
+    }
+    #boton-nuevojuego {
+        margin-left: 5px;
+    }
+    #boton-desistir {
+        margin-left: -370px;
+    }
+    #cancelar {
+        margin-left: 70px;
+    }
+}
+
+/* Baja resolución, Tablets y Mobiles (Landscape/Horizontal) */
+@media screen and (min-width: 481px) and (max-width: 767px){
+    .logo {
+        margin-left: 100px;
+        margin-top: 10px;
+    }
+    .botones-home {
+        margin-left: -160px;
+    }
+    #botones-iniciar-juego {
+        width: 100%;
+    }
+    #boton-nuevojuego {
+        margin-left: 5px;
+    }
+    #boton-desistir {
+        margin-left: -370px;
+    }
+    #cancelar {
+        margin-left: 70px;
+    }
+}
+
+/* Tablets, Ipads (Landscape/Horizontal)*/
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .logo {
+        margin-left: 50px;
+        margin-top: 10px;
+    }
+    .botones-home {
+        margin-left: -100px;
+    }
+    #botones-iniciar-juego {
+        width: 100%;
+    }
+    #boton-nuevojuego {
+        margin-left: 1px;
+    }
+    #boton-desistir {
+        margin-left: -240px;
+    }
+    #cancelar {
+        margin-left: 40px;
+    }
+}
